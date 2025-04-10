@@ -32,7 +32,7 @@
     <!--   bg-[url(./resourses/hombre.png)] imagen de fondo -->
 </head>
 
-<body>
+<body class="max-[w-1200px]:">
     <main class="">
 
         <header class="bg-[#0a0f22] text-white text-xs fon flex justify-around items-center h-10">
@@ -82,20 +82,20 @@
         </section>
 
 
-        <section class="w-full h-100 bg-[#0a0f22]  relative">
+        <section class="w-full h-100 bg-[#0a0f22] ">
+            <div class="flex justify-center items-center h-100 w-full">
+                <img src="./resourses/mujer.avif" width="30px" alt="" class=" ">
+                <img src="./resourses/mujer.avif" width="30px" alt="" class=" ">
+                <div class="text-yellow-50 border w-60 h-full flex flex-col justify-center items-center">
+                    <h2 class="text-4xl">WHO AM I</h2>
+                    <p>hgxhhfhfhthgfmjhcghcmhgcmhchghhswgdhwhbbbbbbbbbbbbhbbbbchcg</p>
+                    <p>jxhjhfyufuyfutgfygggggggggggggggggggggggydtydytskx</p>
+                    <p>ajhkjhvyhcykhcjjjjjjjjjjjjjjjjjjjjjjjjjjjtctyctycjhycg ghja</p>
+                    <a class="bg-[#e9f98b] text-black w-35 rounded-2xl flex justify-center" href="">show my proyect</a>
+                </div>
+                <img src="./resourses/mujer.avif" width="30px" alt="" class=" ">
 
-            <img src="./resourses/mujer.avif" width="150px" alt="" class=" ">
-            <img src="./resourses/mujer.avif" width="150" alt="" class=" ">
-            <img src="./resourses/mujer.avif" width="150" alt="" class=" ">
-
-            <div class="text-yellow-50 border w-60 absolute top-25 left-50 ">
-                <h2>WHO AM I</h2>
-                <p>hgxhhfhfhthgfmjhcghcmhgcmhchgchcg</p>
-                <p>jxhjhfyufuyfuydtydytskx</p>
-                <p>ajhkjhvyhcykhcycytctyctycjhycg ghja</p>
-                <a href="">show my proyecto</a>
             </div>
-
 
         </section>
         <section class=" h-200 w-svw  bg-[#0a0f22] h-250 flex flex-col justify-center items-center">
@@ -177,47 +177,70 @@
             </section>
 
         </section>
-        <section class="border border-red-600 h-200 bg-[#0a0f22] ">
-            <div>
-                <div>
-                    <p></p>
+
+
+
+
+
+
+        <section class="border border-red-600 h-150 bg-[#0a0f22] text-white flex  justify-center items-center">
+
+            <div class="w-1/2  ">
+                <div class="border h-55 w-75">
+                    <p class="text-[55px]">THE WORKS CLOSEST TO MY HEART</p>
                 </div>
-                <div class="flex border-red-400 w-24 gap-x-2 ">
-                    <img class="rounded-7" src="./resourses/mujer.avif" width="300px" alt="">
-                    <img src="./resourses/mujer.avif" width="300px" alt="">
-                    <img src="./resourses/mujer.avif" width="300px" alt="">
+
+                <div class="w-100 border border-red-500 flex items-center">
+
+                    <a class="bg-[#e8f68e] rounded-2xl  text text-black h-5 " href="">SHOW MY PROYECT </a>
+                    <DIV class="border w-25 h-15 text-[20px] ">
+                        <p>Plumbing company</p>
+                    </DIV>
+
+                </div>
+            </div>
+            <div class="border border-red-400  gap-x-2 w-60 flex h-70 ">
+                <div> <img class="rounded-7" src="./resourses/mujer.avif" width="100px" height="100px" alt=""></div>
+                <div><img src="./resourses/mujer.avif" width="100" alt=""></div>
+                <div>
+                    <img src="./resourses/mujer.avif" width="100" alt="">
                 </div>
 
             </div>
-            <div>
-                <a href=""></a>
-                <p></p>
-            </div>
+
+
 
         </section>
 
 
+
+
+
+
+
         <section class="bg-[#0a0f22] h-svh w-full flex justify-center items-center">
 
-            <section class="bg-white w-[70%] h-90 flex flex-col justify-center items-center ">
+            <section class="bg-white w-[70%] h-90 flex flex-col justify-center items-center rounded-xl ">
+                <div class=" h-18 ">
+                    <h2 class="text-3xl   font-bold">LET´S HAVE A CHAT</h2>
+                </div>
 
-                <h2>LET´S HAVE A CHAT</h2>
 
-                <form class="border border-red-700 w-[80%]" action="">
-                    <div>
-                        <input class="bg-[#e3e3e3] w[100%]" type="text" placeholder="your name">
+                <form class="border w-[100%] flex flex-col justify-center items-center gap-y-4" action="">
+                    <div class="flex flex-col justify-center items-center  w-[100%] ">
+                        <input class="bg-[#e3e3e3] w-[90%] h-10 rounded-xl" type="text" placeholder="your name">
                     </div>
-                    <div>
-                        <input class="bg-[#e3e3e3] " type="email" placeholder="email address">
+                    <div class="flex flex-col justify-center items-center  w-[100%] ">
+                        <input class="bg-[#e3e3e3] w-[90%] h-10 rounded-xl" type="email" placeholder="email address">
                     </div>
-                    <textarea class="bg-[#e3e3e3] " name="" placeholder="chat here" id=""></textarea>
 
+                    <textarea class="bg-[#e3e3e3] w-[90%] h-20 rounded-xl " name="" placeholder="chat here"
+                        id=""></textarea>
+
+                    <button class="bg-[#e7f78c] w-[90%] h-8 rounded-2xl text-s font-semibold" type="submit">submit
+                        here</button>
                 </form>
 
-
-
-
-                <button type="submit">submit here</button>
 
             </section>
 
