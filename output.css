@@ -289,6 +289,9 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
@@ -436,6 +439,9 @@
   .w-svw {
     width: 100svw;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .-rotate-6 {
     rotate: calc(6deg * -1);
   }
@@ -447,6 +453,9 @@
   }
   .rotate-20 {
     rotate: 20deg;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -650,6 +659,9 @@
   .text-yellow-50 {
     color: var(--color-yellow-50);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow-\[-30px_0px_100px_rgba\(250\,250\,250\,0\.3\)\] {
     --tw-shadow: -30px 0px 100px var(--tw-shadow-color, rgba(250,250,250,0.3));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -666,9 +678,23 @@
     --tw-shadow: 30px 0px 100px var(--tw-shadow-color, rgba(250,250,250,0.3));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .dark\:bg-amber-400 {
     &:where(.dark, .dark *) {
       background-color: var(--color-amber-400);
+    }
+  }
+  .dark\:bg-blue-300 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-blue-300);
+    }
+  }
+  .dark\:bg-yellow-300 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-yellow-300);
     }
   }
 }
@@ -792,6 +818,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -821,6 +852,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
     }
   }
 }
