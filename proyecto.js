@@ -42,4 +42,16 @@ mySkills.forEach(element => {
 });
 
 
+let formulario = document.querySelector("#contacto");
+formulario.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+    let ana = new FormData(formulario)
+    console.log(ana.get("nombre"));
+})
+
+
+
+
+
+
 
